@@ -13,7 +13,7 @@ def build_query(cmd, value, data):
         return result
 
     if cmd == 'sort':
-        reverse = value
+        reverse = value == 'desc'
         result = sorted(data, reverse=reverse)
         return result
 
